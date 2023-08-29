@@ -1,0 +1,91 @@
+
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #9ED5CB;
+}
+.container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 500px;
+    grid-template-rows: 300px 450px 1170px 1fr;
+    grid-column-gap:20px ;
+    grid-row-gap: 40px;
+    grid-template-areas: 
+    "int int"
+    "tr tr"
+    "main side"
+    "ft ft";    
+}
+.structure {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 100px 50px 400px 4000px;
+    grid-gap: 15px;
+    grid-template-areas: 
+    "title"
+    "profile"
+    "picture"
+    "topic";
+}
+
+
+/* For medium screens */
+@media(min-width: 600px) and (max-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 863px;
+        grid-template-rows: 150px 300px 850px 1fr;
+        grid-column-gap:20px ;
+        grid-row-gap: 40px;
+        grid-template-areas: 
+        "int int"
+        "tr tr"
+        "main main"
+        "ft ft";    
+    }
+    .structure {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 50px 300px 2500px;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "title"
+        "profile"
+        "picture"
+        "topic";
+    }
+    
+}
+
+/* For small screens */
+@media (min-width: 320px) and (max-width:599px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 563px;
+        grid-template-rows: 130px 350px 600px 1fr;
+        grid-column-gap:20px ;
+        grid-row-gap: 40px;
+        grid-template-areas: 
+        "int int"
+        "tr tr"
+        "main main"
+        "ft ft";    
+    }
+    .structure {
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 100px 50px 200px 2500px;
+        grid-gap: 15px;
+        grid-template-areas: 
+        "title"
+        "profile"
+        "picture"
+        "topic";
+    }
+}

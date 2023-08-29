@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url(header.css);
+@import url(footer.css);
+@import url(layout.css);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+li, a, button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+    color: #9ED5CB;
+}
+.trend, h1, h5 {
+    margin-left: 60px;
+}
+#button2 {
+    color: azure;
+    background-color: darkslategray;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+    margin-left: 60px;   
+} 
+#button2:hover {
+    background-color:darkgoldenrod;
+    color: azure;
+}
+#head {
+    grid-area: int;
+    background: linear-gradient(90deg, rgba(158,213,203,1) 0%, rgb(47, 79, 79) 100%);
+    width: 100%;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    color: azure;
+}
+#one {
+    grid-area: tr;
+}
+.trend {
+    display: flex;
+    align-items:flex-start;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* change start from here */
+.blog-post-card {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 400px;
+    grid-template-areas:
+    "one two three four five";
+    
+}
+#tr1 {
+    grid-area: one;
+}
+#tr2 {
+    grid-area: two;
+}
+#tr3 {
+    grid-area: three;
+}
+#tr4 {
+    grid-area: four;
+}
+#tr5 {
+    grid-area: five;
+}
+#tr1, #tr2, #tr3, #tr4, #tr5, #tr6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid gray;
+    margin-left: 20px;
+    box-shadow: 1px 1px 10px gray;
+    row-gap: 7px;
+}
+#tr1:hover, #tr2:hover, #tr3:hover, #tr4:hover, #tr5:hover, #tr6:hover {
+    box-shadow: -5px -5px 20px grey;
+    transition: 0.4s;
+}
+#tr1 .auther:hover, #tr2 .auther:hover, #tr3 .auther:hover, #tr4 .auther:hover, #tr5 .auther:hover, #tr6 .auther:hover {
+    color: darkgoldenrod;
+}
+#tr1 .title:hover, #tr2 .title:hover, #tr3 .title:hover, #tr4 .title:hover, #tr5 .title:hover, #tr6 .title:hover {
+    color: darkgoldenrod;
+} 
+.post-card {
+    border-radius: 3%;
+    height: 110px; 
+    width: 170px;
+}
+.profile {
+    border-radius: 50%;
+    height: 23px; 
+    width: 23px;
+    object-fit: cover;
+}
+.auther {
+    color: darkslategray;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 15px;
+}
+.title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: underline;
+}
+.desc {
+    font-family: "Montserrat", sans-serif;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* change up to here */
+
+#two {
+    grid-area: main;
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6, 200px);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "topic1"
+    "topic2"
+    "topic3"
+    "topic4"
+    "topic5"
+    "topic6";
+}
+#cont1, #cont2, #cont3, #cont4, #cont5, #cont6 {
+    display: flex;
+    align-items: center;
+}
+#cont1:hover, #cont2:hover, #cont3:hover, #cont4:hover, #cont5:hover, #cont6:hover {
+    color: darkgoldenrod;
+}
+.top1 h2:hover {
+    color: darkgoldenrod;
+}
+
+.content1 {
+    grid-area: topic1;
+}
+.top1 {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 30%;
+    grid-template-rows: 200px;
+}
+
+.profile2 {
+    grid-area: profile;
+    border-radius: 50%;
+    height: 25px; 
+    width: 25px;
+    
+}
+.title2 {
+    grid-area: profile;
+    font-family: "Montserrat", sans-serif;
+    font-size: 13px;
+    margin-left: 5px; 
+    text-decoration: underline; 
+}
+.topic {
+    height: 120px;
+    width: 180px;
+    float: right;
+}
+section {
+    font-family: "Montserrat", sans-serif;
+}
+figure {
+    font-family: "Montserrat", sans-serif;
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#three {
+    grid-area: side;
+    padding: 20px;
+    margin: 20px;
+    font-family: "Montserrat", sans-serif;
+    
+}
+.column {
+    position: sticky;
+    top: 0;
+}
+#three h6 {
+    color: green;
+}
+#three h6:hover {
+    color: black;
+}
+.recommandation {
+    display: flex;
+    justify-content: space-between;
+}
+
+#button3 {
+    color: black;
+    background-color: whitesmoke;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+    transition-duration: 0.4s;
+} 
+#button3:hover {
+    background-color: gainsboro;
+    color: black;
+}
+
+/* For medium screens */
+@media(min-width: 600px) and (max-width: 900px) {
+    li, a, button {
+        font-weight: 100;
+        font-size: 12px;
+    }
+    #head {
+        grid-area: int;
+        background: linear-gradient(90deg, rgba(158,213,203,1) 0%, rgb(47, 79, 79) 100%);
+        font-size: 15px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        color: azure;
+    }
+    .trend, h1, h5 {
+        margin-left: 35px;
+    }
+    h4, h2, p {
+        font-size: 15px;
+    }  
+    #button2 {
+        color: azure;
+        background-color: darkslategray;
+        border: none;
+        padding: 10px;
+        border-radius: 30px;
+        transition-duration: 0.4s;
+        margin-left: 35px;   
+    }
+    .blog-post-card {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 300px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "one two three four five";
+    }
+    .post-card {
+        border-radius: 10%;
+        height: 70px; 
+        width: 100px;
+        margin-bottom: 10px;
+    }
+    .profile {
+        border-radius: 50%;
+        height: 20px; 
+        width: 20px;
+        object-fit: cover;
+        
+    }
+    .auther {
+        color: darkslategray;
+        font-family: "Montserrat", sans-serif;
+        font-size: 11px;
+        margin-left: 25px;
+    
+    }
+    .title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .desc {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        text-align: center;
+        margin-bottom: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
+    
+    }
+    #two {
+        grid-area: main;
+        margin-left: 35px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6, 200px);
+        grid-gap: 5px;
+        grid-template-areas: 
+        "topic1"
+        "topic2"
+        "topic3"
+        "topic4"
+        "topic5"
+        "topic6";
+    }
+    .profile2 {
+        grid-area: profile;
+        border-radius: 50%;
+        height: 20px; 
+        width: 20px; 
+    }
+    .topic {
+        height: 90px;
+        width: 130px;
+        float: left;
+    }
+    #three {
+        grid-area: side;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Montserrat", sans-serif;
+        visibility: hidden;
+    }
+
+}
+/* For small screens */
+@media (min-width: 320px) and (max-width:599px) {
+    li, a, button {
+        font-weight: 100;
+        font-size: 11px;
+    }
+    #head {
+        grid-area: int;
+        background: linear-gradient(90deg, rgba(158,213,203,1) 0%, rgb(47, 79, 79) 100%);
+        font-size: 11px;
+        width: 100%;
+        font-family: "Montserrat", sans-serif;
+        color: azure;
+    }
+    .trend, h1, h5 {
+        margin-left: 15px;
+    }
+    h4, h2, p {
+        font-size: 11px;
+    }
+    #button2 {
+        color: azure;
+        background-color: darkslategray;
+        border: none;
+        padding: 10px;
+        border-radius: 30px;
+        transition-duration: 0.4s;
+        margin-left: 15px;   
+    }
+    .blog-post-card {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 330px;
+        grid-gap: 10px;
+        grid-template-areas:
+        "one two three four five";
+    }
+    
+    .post-card {
+        border-radius: 10%;
+        height: 50px; 
+        width: 70px;
+    }
+    .profile {
+        border-radius: 50%;
+        height: 20px; 
+        width: 20px;
+        object-fit: cover;
+        
+    }
+    .auther {
+        color: darkslategray;
+        font-family: "Montserrat", sans-serif;
+        font-size: 8px;
+    
+    }
+    .title {
+        font-family: "Montserrat", sans-serif;
+        font-size: 10px;
+        margin-left: 5px;
+    }
+    .desc {
+        font-family: "Montserrat", sans-serif;
+        font-size: 8px;
+        text-align: center;
+    
+    }
+    #two {
+        grid-area: main;
+        margin-left: 15px;
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(6, 150px);
+        grid-gap: 5px;
+        grid-template-areas: 
+        "topic1"
+        "topic2"
+        "topic3"
+        "topic4"
+        "topic5"
+        "topic6";
+    }
+    .profile2 {
+        grid-area: profile;
+        border-radius: 50%;
+        height: 20px; 
+        width: 20px; 
+    }
+    .topic {
+        height: 80px;
+        width: 120px;
+        float: left;
+    }
+    #three {
+        grid-area: side;
+        padding: 10px;
+        margin: 10px;
+        font-family: "Montserrat", sans-serif;
+        visibility: hidden;
+    }
+}

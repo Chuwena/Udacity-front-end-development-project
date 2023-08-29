@@ -1,0 +1,26 @@
+.social-media {
+    display: flex;
+    justify-content: flex-start;
+    padding: 60px; 
+    font-family: "Montserrat", sans-serif;
+    align-items: center;
+    font-size: 10px;
+}
+.icons {
+    height: 25px; 
+    width: 25px;
+    margin-left: 15px;
+    transition-duration: 0.4s;
+}
+.icons:hover {
+    height: 50px; 
+    width: 50px;
+     
+}
+#ending {
+    float:right ;
+}
+#ending:hover {
+    color: darkgoldenrod;
+}
+
