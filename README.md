@@ -1,4 +1,4 @@
-# Makeen nan-degree program: front-end development projects
+# Makeen nano-degree program: front-end development projects
 Project #1:
 Personal Blog Website: 
 A multi-page blog website built using the best practices for content and page styling with HTML, CSS with the use of responsive layout, Flexbox, and CSS Grid.
